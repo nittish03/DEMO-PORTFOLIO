@@ -213,7 +213,7 @@ hr{
     border-radius: 10px;
 }
 #box{
-    background-color: rgb(249, 249, 49);
+    background:linear-gradient(red,yellow);
     height: 90px;
     width: 300px;
     margin: 30px;
