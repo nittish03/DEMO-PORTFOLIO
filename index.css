@@ -10,6 +10,10 @@ header{
     font-size: 25px;
     font-weight: 500;
 }
+.right1 ul{
+    display: flex;
+    justify-content: space-between;
+        }
 nav{
     background-color: rgb(192, 216, 216);
     height: 80px;
@@ -26,11 +30,12 @@ nav ul{
 nav ul li a{
     text-decoration: none;
     color: black;
+    transition: 0.2s;
+
 }
 nav ul li a:hover{
-    transition: 0.2s;
    color: red;
-   font-size:1.6rem;
+   font-size:1.7rem;
 
 }
 /* header done */
@@ -59,6 +64,11 @@ nav ul li a:hover{
 .rightS1 img{
     height: 60%;
     width: 60%;
+    transition: 0.4s;
+    border-radius: 5px;
+}
+.rightS1 img:hover{
+    scale: 1.1;
 }
 .rightS1{
     width: 40%;
@@ -132,19 +142,36 @@ text-decoration: underline;
 .rightS3{
     width: 50%;
     margin-top: 20px;
+    
 }
 .s{
     height: 75px;
     width: 75px;
     list-style-type: none;
-    margin: 10px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.s a{
+    text-decoration: none;
+    height: 75px;
+    width: 75px;
+    list-style-type: none;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .s img{
 height: 45px;
 width: 40px;
+transition:0.4s;
+margin-bottom: 5px;
 }
 .s img:hover{
-    transition: 0.4s;
   scale: 1.3;
     }
 /* section 3 done */
@@ -184,12 +211,26 @@ hr{
     border-radius: 10px;
 }
 #box{
-    background-color: rgb(158, 114, 114);
+    background-color: rgb(249, 249, 49);
     height: 90px;
     width: 300px;
     margin: 30px;
     border: 4px solid black;
     border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#box a{
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-weight: bolder;
+    transition: 0.6s;
+}
+#box a:hover{
+    scale: 1.1;
+    color: white;
 }
 /* section 4 done
 section 5 start */
@@ -213,14 +254,20 @@ section 5 start */
 .rightS5 div img{
     height: 80px;
     width: 80px;
+    transition: 0.4s;
+    mix-blend-mode: multiply;
+}
+.rightS5 div img:hover{
+    scale: 1.1;
 }
 .rightS5 a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    transition: 0.4s;
+
 }
 .rightS5 a:hover{
-    transition: 0.4s;
     color: orange;
     font-size: 1.4rem;
 }
@@ -267,8 +314,10 @@ footer img{
     justify-content: center;
     align-items: center;
 }
+footer div{
+    transition: 0.4s;
+}
 footer div:hover{
     scale: 1.01;
     color: orange;
-    transition: 0.4s;
 }
